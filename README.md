@@ -3,6 +3,19 @@
 ## Linux (Ubuntu)
 
 * Install Broadcom Wifi (proprietary) driver, Mac Mini: http://askubuntu.com/a/626653/331909
+
+> You need to install wireless driver.
+> Insert your Ubuntu installation disk or a flash drive and copy these files from the installation disk to your Home directory:
+
+> ```
+> pool/main/d/dkms/dkms_XXXXX.deb
+> pool/restricted/b/bcmwl/bcmwl-kernel-source_XXXXX.deb
+> ```
+>
+> Then run the following in terminal:
+>
+> `sudo dpkg -i *.deb`
+
 * Invert the `fn` key mode (default on/off): https://help.ubuntu.com/community/MacBook3-1/Maverick
 * Cisco IPSEC VPN: http://askubuntu.com/a/488446/331909
   * In Kubuntu 16.04 the VPN works from the UI too, given that `vpnc` and `network-manager-vpnc` (as mentioned here https://help.ubuntu.com/community/VPNClient) are installed; in "Connection editor" there's a "Cisco Compatible VPN (vpnc)" option
