@@ -22,3 +22,8 @@
         * `sudo apt-get install vpnc network-manager-vpnc network-manager-vpnc-gnome`
     * In __Kubuntu__ 16.04 the VPN works from the UI too, given that `vpnc` and `network-manager-vpnc` (as mentioned here https://help.ubuntu.com/community/VPNClient) are installed; in "Connection editor" there's a "Cisco Compatible VPN (vpnc)" option
     * Note for Kubuntu GUI: leave the "User password" empty, will be asked for when you click "Connect"
+
+## Git
+
+- nice looking git log graph in Terminal/Command Line: `git log --graph --decorate --all`
+    - for more ideas see: http://stackoverflow.com/questions/1057564/pretty-git-branch-graphs
