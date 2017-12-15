@@ -23,6 +23,20 @@
     * In __Kubuntu__ 16.04 the VPN works from the UI too, given that `vpnc` and `network-manager-vpnc` (as mentioned here https://help.ubuntu.com/community/VPNClient) are installed; in "Connection editor" there's a "Cisco Compatible VPN (vpnc)" option
     * Note for Kubuntu GUI: leave the "User password" empty, will be asked for when you click "Connect"
 
+### Turn off / on built in WiFi card (e.g. when using a WiFi stick)
+
+Source: https://askubuntu.com/questions/168032/how-to-disable-built-in-wifi-and-use-only-usb-wifi-card
+
+Add the following line to `/etc/network/interfaces`:
+
+`iface wlan0 inet manual`
+
+NetworManager doesn't manage interfaces configured in the `interfaces` file. Replace `wlan0` with the interface you want to disable, if it's not the name of the built-in interface. Note: use `ifconfig` to find the name of the built in wifi interface.
+
+Then restart network manager
+
+`sudo service network-manager restart`
+
 ## Git
 
 - nice looking git log graph in Terminal/Command Line: `git log --graph --decorate --all`
