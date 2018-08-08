@@ -17,3 +17,24 @@ grep -r --include="*.rb" 'something' .
 
 Finds .rb files which contain the text 'something' recursively starting in the current directory.
 
+## GPG
+
+Encrypt a message in an armored / text based format (easy to copy paste):
+
+```
+echo 'Some Secret Message' | gpg --armor --recipient 'RecipientNameID' -e
+```
+
+Decrypt:
+
+```
+gpg -d
+# or
+echo 'TheEncryptedSecretMessage' | gpg -d
+```
+
+Single line encrypt & decrypt test:
+
+```
+echo 'Some Secret Message' | gpg --armor --recipient 'RecipientNameID' -e | gpg -d
+```
