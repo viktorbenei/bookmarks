@@ -23,6 +23,8 @@ Encrypt a message in an armored / text based format (easy to copy paste):
 
 ```
 echo 'Some Secret Message' | gpg --armor --recipient 'RecipientNameID' -e
+# or the short form:
+echo 'Some Secret Message' | gpg -a -r 'RecipientNameID' -e
 ```
 
 Decrypt:
