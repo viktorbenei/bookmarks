@@ -17,6 +17,14 @@ grep -r --include="*.rb" 'something' .
 
 Finds .rb files which contain the text 'something' recursively starting in the current directory.
 
+## Find large files
+
+Find the top 5 largest files in the current directory and under:
+
+```
+du -a | sort -n -r | head -n 5
+```
+
 ## GPG
 
 Encrypt a message in an armored / text based format (easy to copy paste):
