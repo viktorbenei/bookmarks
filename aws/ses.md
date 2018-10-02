@@ -14,11 +14,10 @@ To do that:
 
 This should be clear if you can read (unlike me :P) :
 
-IMG
+![aws-smtp-generate-credentials](./aws-smtp-generate-credentials.png)
 
-Of course it's not exactly obvious, as an actual IAM user will be created, with an actual IAM policy:
-
-So you'd think that if you attach the IAM policy to a user that should allow you
+Of course it's not exactly obvious, as an actual IAM user will be created, with an actual IAM policy,
+so you'd think that if you attach the same IAM policy to a user that should allow you
 to send emails via SMTP using the IAM user's credentials.
 That is not the case, SMTP credentials != the IAM credentials,
-you always have to create it from the SES SMTP Settings dashboard/page!
+**you always have to create it from the SES SMTP Settings dashboard/page**!
