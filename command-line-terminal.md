@@ -48,3 +48,13 @@ Single line encrypt & decrypt test:
 ```
 echo 'Some Secret Message' | gpg --armor --recipient 'RecipientNameID' -e | gpg -d
 ```
+
+## Ubuntu
+
+### In case some sites stop loading (but loads from another device on the same network)
+
+A solution can be to do a restart of course, but better to just restart the `network-manager`:
+
+```
+sudo service network-manager restart
+```
