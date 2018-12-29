@@ -49,6 +49,16 @@ Single line encrypt & decrypt test:
 echo 'Some Secret Message' | gpg --armor --recipient 'RecipientNameID' -e | gpg -d
 ```
 
+## ab
+
+Apache AB for server benchmarking.
+Install with: `sudo apt install apache2-utils`
+
+```
+# send 10 requests by 5 concurrent users to the url
+ab -n 10 -c 5 http://www.server.com
+```
+
 ## Ubuntu
 
 ### In case some sites stop loading (but loads from another device on the same network)
