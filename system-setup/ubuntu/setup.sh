@@ -6,7 +6,7 @@ sudo apt-get upgrade -y
 
 # Apt packages
 sudo apt-get install -y \
-  vim htop curl git xclip \
+  vim htop curl git xclip tree \
   gnome-tweaks \
   exfat-fuse exfat-utils
 
@@ -23,8 +23,10 @@ if [[ "$SHELL" != "/usr/bin/fish" ]] ; then
   chsh -s /usr/bin/fish
 fi
 # Setup oh-my-fish
-curl -L https://get.oh-my.fish | fish
-fish -c 'omf install bobthefish'
+if [ ! -d "$HOME/.local/share/omf" ] ; then
+  curl -L https://get.oh-my.fish | fish
+  fish -c 'omf install bobthefish'
+fi
 
 # Bitrise CLI
 if ! [ -x "$(command -v bitrise)" ]; then
@@ -34,3 +36,4 @@ else
   echo "bitrise cli already installed"
 fi
 
+echo '=== FINISHED [OK] ==='
