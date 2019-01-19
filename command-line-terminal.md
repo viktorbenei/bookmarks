@@ -1,5 +1,11 @@
 # Command Line / Terminal (Unix) commands
 
+## Copy to clipboard
+
+```
+echo 'copy this to clipboard' | xclip -sel c
+```
+
 ## Git
 
 - nice looking git log graph in Terminal/Command Line: `git log --graph --decorate --all`
