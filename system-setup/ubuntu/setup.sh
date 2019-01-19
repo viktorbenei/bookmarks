@@ -19,7 +19,12 @@ sudo apt-add-repository -y ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install -y fish
 # Make it the default shell
-chsh -s /usr/bin/fish
+if [[ "$SHELL" != "/usr/bin/fish" ]] ; then
+  chsh -s /usr/bin/fish
+fi
+# Setup oh-my-fish
+curl -L https://get.oh-my.fish | fish
+fish -c 'omf install bobthefish'
 
 # Bitrise CLI
 if ! [ -x "$(command -v bitrise)" ]; then
