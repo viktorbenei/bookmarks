@@ -19,7 +19,7 @@ sudo apt-add-repository -y ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install -y fish
 # Make it the default shell
-sudo chsh -s /usr/bin/fish
+chsh -s /usr/bin/fish
 
 # Bitrise CLI
 if ! [ -x "$(command -v bitrise)" ]; then
