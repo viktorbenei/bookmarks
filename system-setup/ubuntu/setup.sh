@@ -8,7 +8,8 @@ sudo apt-get upgrade -y
 sudo apt-get install -y \
   vim htop curl git xclip tree \
   gnome-tweaks \
-  exfat-fuse exfat-utils
+  exfat-fuse exfat-utils \
+  fonts-hack
 
 # Snap packages
 sudo snap install \
