@@ -8,3 +8,8 @@
 - Profiling tools:
     - Go Benchmark Tests (`go test -bench ...`)
     - `go tool pprof`
+
+## Useful Tools
+
+- JSON to Go coverter: https://mholt.github.io/json-to-go/
+- curl to Go converter: https://mholt.github.io/curl-to-go/
