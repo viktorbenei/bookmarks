@@ -43,6 +43,16 @@ Source:
 - https://help.ubuntu.com/community/Boot-Info
 
 
+## Desktop/DE frozen/hangs (Gnome, Ubuntu 18.04)
+
+Worked in Ubuntu 18.04 with default DE (Gnome):
+
+1. Switch to another tty with: `Ctrl`+`Alt`+`F3`
+1. This opens a terminal tty/console
+1. Log in
+1. Then run: `killall -3 gnome-shell`
+1. Switch back to the GUI/DE tty: `Ctrl`+`Alt`+`F2`
+
 
 ## Turn off / on built in WiFi card (e.g. when using a WiFi stick)
 
