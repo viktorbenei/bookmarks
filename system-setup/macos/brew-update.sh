@@ -5,4 +5,5 @@ brew cleanup
 brew update
 brew outdated
 brew upgrade
+brew cask upgrade
 
