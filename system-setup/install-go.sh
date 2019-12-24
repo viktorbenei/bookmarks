@@ -24,6 +24,10 @@ if [ -z "$GO_VERSION" ]; then echo "No GO_VERSION" specified ; exit 1; fi
 
 go_version_tar_gz="go${GO_VERSION}.${OS_ID}-${ARCH_ID}.tar.gz"
 
+# download
 cd /tmp
 curl -O "https://storage.googleapis.com/golang/${go_version_tar_gz}"
+
+# uncompress
+sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf "${go_version_tar_gz}"
