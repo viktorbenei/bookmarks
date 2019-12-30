@@ -1,0 +1,14 @@
+format_version: "8"
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: other
+
+workflows:
+  ubuntu-restart-network-manager:
+    steps:
+      - script@1.1.5:
+          title: Restart network manager
+          inputs:
+            - content: |
+                #!/usr/bin/env bash
+                set -ex
+                sudo service network-manager restart
