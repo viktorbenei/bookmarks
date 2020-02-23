@@ -22,6 +22,8 @@
         * `sudo apt-get install vpnc network-manager-vpnc network-manager-vpnc-gnome`
     * In __Kubuntu__ 16.04 the VPN works from the UI too, given that `vpnc` and `network-manager-vpnc` (as mentioned here https://help.ubuntu.com/community/VPNClient) are installed; in "Connection editor" there's a "Cisco Compatible VPN (vpnc)" option
     * Note for Kubuntu GUI: leave the "User password" empty, will be asked for when you click "Connect"
+* Cisco AnyConnect compatible open source `openconnect` VPN:
+    * __Ubuntu 18.04__: similar to the `vpnc` one: `sudo apt-get install openconnect network-manager-openconnect network-manager-openconnect-gnome` . This will install `openconnect` as well as the network-manager and the gnome plugins, so you can add Cisco AnyConnect/openconnect compatible VPNs from the System UI directly (System Settings -> Network -> Add VPN)
 
 ## Booting from external HDD/SSD
 
