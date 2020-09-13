@@ -26,7 +26,7 @@ go_version_tar_gz="go${GO_VERSION}.${OS_ID}-${ARCH_ID}.tar.gz"
 
 # download
 cd /tmp
-curl -O "https://storage.googleapis.com/golang/${go_version_tar_gz}"
+curl -fO "https://storage.googleapis.com/golang/${go_version_tar_gz}"
 
 # uncompress
 sudo rm -rf /usr/local/go
