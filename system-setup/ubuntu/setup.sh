@@ -11,7 +11,8 @@ sudo apt-get install -y \
   vim htop curl git xclip tree \
   gnome-tweaks \
   exfat-fuse exfat-utils \
-  fonts-hack
+  fonts-hack \
+  build-essential
 
 # Snap packages
 sudo snap install vlc
