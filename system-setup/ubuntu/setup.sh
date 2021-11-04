@@ -9,6 +9,7 @@ sudo apt-get upgrade -y
 
 # Install Apt packages
 sudo apt-get install -y \
+  ca-certificates \
   vim htop curl git xclip tree \
   gnome-tweaks \
   exfat-fuse exfat-utils \
