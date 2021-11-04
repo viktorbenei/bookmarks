@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+#
+# Source: https://github.com/lastpass/lastpass-cli
+#
+
 set -ex
 
 cd /tmp
