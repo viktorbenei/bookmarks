@@ -1,3 +1,3 @@
 # ~/.config/fish/config.fish
 
-set -x PATH $HOME/bin $PATH
+set -x PATH $HOME/go/bin $PATH
