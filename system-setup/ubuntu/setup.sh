@@ -3,10 +3,11 @@ set -ex
 
 THIS_SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Apt update and upgrade
 sudo apt-get update
 sudo apt-get upgrade -y
 
-# Apt packages
+# Install Apt packages
 sudo apt-get install -y \
   vim htop curl git xclip tree \
   gnome-tweaks \
@@ -42,6 +43,7 @@ else
   echo "bitrise cli already installed"
 fi
 
+# Install Go
 if [[ "$INSTALL_GO" == "true" ]] ; then
   env GO_VERSION="1.15.2" bash "${THIS_SCRIPTDIR}/../install-go.sh"
 fi
