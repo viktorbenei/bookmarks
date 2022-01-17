@@ -23,6 +23,24 @@ grep -r --include="*.rb" 'something' .
 
 Finds .rb files which contain the text 'something' recursively starting in the current directory.
 
+## Go private repository dependency
+
+Run `go env -w GOPRIVATE=github.com/ORG/REPO` to mark that specific repo on your machine as a private repo.
+
+Additionally, if you want to use SSH to clone it instead of using HTTPS change your `~/.gitconfig`:
+
+```
+[url "git@github.com:ORG/REPO"]
+        insteadOf = https://github.com/ORG/REPO
+```
+
+or run this to change it:
+
+```
+git config --global url."git@github.com:ORG/REPO".insteadOf "https://github.com/ORG/REPO"
+```
+
+
 ## Find large files
 
 Find the top 5 largest files in the current directory and under:
