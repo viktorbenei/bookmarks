@@ -20,4 +20,8 @@ cd ~/temp
 git clone https://github.com/bitrise-steplib/steps-deploy-to-bitrise-io.git
 cd steps-deploy-to-bitrise-io
 git checkout bins-515-xcresult-to-junit-conversion-takes-too-long
+
+# Install some tools for debugging
+brew update 
+brew install htop
 ```
