@@ -20,8 +20,17 @@ cd ~/temp
 git clone https://github.com/bitrise-steplib/steps-deploy-to-bitrise-io.git
 cd steps-deploy-to-bitrise-io
 git checkout bins-515-xcresult-to-junit-conversion-takes-too-long
+code .
 
 # Install some tools for debugging
 brew update 
 brew install htop
 ```
+
+Now that the `setup.sh` file is available on the temporary VM, open a Terminal in VSCode connected to the temp remote VM, and run:
+
+```
+bash ~/setup.sh
+```
+
+
