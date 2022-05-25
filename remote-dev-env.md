@@ -15,16 +15,23 @@ on your own mac, you ran it on your own mac, but want to debug it on the build V
 #!/usr/bin/env bash
 set -ex
 
+# get the code and checkout the working branch
 mkdir -p ~/temp
 cd ~/temp
 git clone https://github.com/bitrise-steplib/steps-deploy-to-bitrise-io.git
 cd steps-deploy-to-bitrise-io
 git checkout bins-515-xcresult-to-junit-conversion-takes-too-long
-code .
+# prepare the test data
+mkdir -p ./_tmp/xcresults
+rsync -avhP /tmp/xcresults/Large-Tests.xcresult ./_tmp/xcresults/Large-Tests.xcresult
 
 # Install some tools for debugging
 brew update 
 brew install htop
+brew install go
+
+# Open VSCode in the code dir
+code .
 ```
 
 Now that the `setup.sh` file is available on the temporary VM, open a Terminal in VSCode connected to the temp remote VM, and run:
@@ -37,3 +44,4 @@ bash ~/setup.sh
 
 - Keep the Bitrise VM alive for longer: add a `Script` step at the end of the workflow with `sleep 1800` to keep it running for half an hour.
 - Run a new build with Remote Access enabled.
+- Note: you can drag and drop files and folders into VSCode and it'll copy that over to the Remote VM. Depending on what you're doing it might be easier to just drag and drop your whole folder than to recreate via script what you have in local, e.g. if you depend on uncommitted or special test files which aren't in the repo.
