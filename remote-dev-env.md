@@ -33,4 +33,7 @@ Now that the `setup.sh` file is available on the temporary VM, open a Terminal i
 bash ~/setup.sh
 ```
 
+### Tricks
 
+- Keep the Bitrise VM alive for longer: add a `Script` step at the end of the workflow with `sleep 1800` to keep it running for half an hour.
+- Run a new build with Remote Access enabled.
