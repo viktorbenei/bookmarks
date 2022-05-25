@@ -23,7 +23,7 @@ cd steps-deploy-to-bitrise-io
 git checkout bins-515-xcresult-to-junit-conversion-takes-too-long
 # prepare the test data
 mkdir -p ./_tmp/xcresults
-rsync -avhP /tmp/xcresults/Large-Tests.xcresult ./_tmp/xcresults/Large-Tests.xcresult
+rsync -avhP /tmp/xcresults/Large-Tests.xcresult ./_tmp/xcresults
 
 # Install some tools for debugging
 brew update 
