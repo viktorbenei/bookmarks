@@ -16,6 +16,12 @@ set -x PATH /opt/homebrew/bin $PATH
 # Add go bin dir to PATH
 set -x PATH $HOME/go/bin $PATH
 
+# asdf
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+# Android / Java
+set -x JAVA_HOME '/Applications/Android Studio.app/Contents/jbr/Contents/Home'
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/viktorbenei/google-cloud-sdk/path.fish.inc' ]
     . '/Users/viktorbenei/google-cloud-sdk/path.fish.inc'
