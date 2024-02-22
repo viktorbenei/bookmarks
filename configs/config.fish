@@ -21,6 +21,7 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 # Android / Java
 set -x JAVA_HOME '/Applications/Android Studio.app/Contents/jbr/Contents/Home'
+set -x ANDROID_HOME "$HOME/Library/Android/sdk"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/viktorbenei/google-cloud-sdk/path.fish.inc' ]
