@@ -35,4 +35,5 @@ end
 
 # --- Aliases ---
 alias gobr="go build -o /tmp/bin ; and /tmp/bin"
+alias colima-start="colima start --cpu 4 --memory 8"
 # ---------------
