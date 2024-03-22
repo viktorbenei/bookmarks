@@ -1,6 +1,6 @@
 # ~/.config/fish/config.fish
-# ln -s (pwd)/config.fish $HOME/.config/fish/config.fish
-# or source /path/to/config.fish in ~/.config/fish/config.fish
+# ln -s (pwd)/mac.config.fish $HOME/.config/fish/config.fish
+# or source /path/to/mac.config.fish in ~/.config/fish/config.fish
 
 # fish configs
 # bobthefish theme configs:

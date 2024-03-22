@@ -17,8 +17,10 @@ if [ ! -d "$HOME/.local/share/omf" ] ; then
   fish -c 'omf install bobthefish'
 fi
 
+
 cd "${THIS_SCRIPTDIR}/../../configs"
-ln -s "$(pwd)/config.fish" "$HOME/.config/fish/config.fish"
+rm -f "$HOME/.config/fish/config.fish"
+ln -s "$(pwd)/mac.config.fish" "$HOME/.config/fish/config.fish"
 cd -
 
 brew tap homebrew/cask-fonts
