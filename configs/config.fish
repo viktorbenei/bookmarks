@@ -1,5 +1,5 @@
 # ~/.config/fish/config.fish
-# ln -s /path/to/original /path/to/link
+# ln -s (pwd)/config.fish $HOME/.config/fish/config.fish
 # or source /path/to/config.fish in ~/.config/fish/config.fish
 
 # fish configs
@@ -35,5 +35,5 @@ end
 
 # --- Aliases ---
 alias gobr="go build -o /tmp/bin ; and /tmp/bin"
-alias colima-start="colima start --cpu 4 --memory 8"
+alias colima-start="colima start --cpu 4 --memory 8 ; and colima list"
 # ---------------

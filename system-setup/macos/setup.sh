@@ -9,6 +9,7 @@ brew install fish
 brew install go
 brew install --cask iterm2
 brew install tree
+brew install colima
 
 # Setup oh-my-fish
 if [ ! -d "$HOME/.local/share/omf" ] ; then
@@ -16,7 +17,9 @@ if [ ! -d "$HOME/.local/share/omf" ] ; then
   fish -c 'omf install bobthefish'
 fi
 
-cp "${THIS_SCRIPTDIR}/../../configs/config.fish" ~/.config/fish/config.fish
+cd "${THIS_SCRIPTDIR}/../../configs"
+ln -s "$(pwd)/config.fish" "$HOME/.config/fish/config.fish"
+cd -
 
 brew tap homebrew/cask-fonts
 brew install font-hack
