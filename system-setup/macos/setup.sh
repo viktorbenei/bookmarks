@@ -9,6 +9,7 @@ brew install fish
 brew install go
 brew install --cask iterm2
 brew install tree
+brew install docker
 brew install colima
 
 # Setup oh-my-fish
