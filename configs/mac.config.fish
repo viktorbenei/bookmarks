@@ -36,4 +36,6 @@ end
 # --- Aliases ---
 alias gobr="go build -o /tmp/bin ; and /tmp/bin"
 alias colima-start="colima start --cpu 4 --memory 8 ; and colima list"
+alias gitlog-details="git log --graph --decorate --all"
+alias gitlog-graph="git log --graph --decorate --all --oneline"
 # ---------------
