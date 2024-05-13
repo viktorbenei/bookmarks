@@ -24,9 +24,7 @@ set -x JAVA_HOME '/Applications/Android Studio.app/Contents/jbr/Contents/Home'
 set -x ANDROID_HOME "$HOME/Library/Android/sdk"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/viktorbenei/google-cloud-sdk/path.fish.inc' ]
-    . '/Users/viktorbenei/google-cloud-sdk/path.fish.inc'
-end
+if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]; . "$HOME/google-cloud-sdk/path.fish.inc"; end
 
 # flutter
 if [ -d $HOME/develop/flutter/bin ]
