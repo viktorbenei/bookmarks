@@ -1,5 +1,7 @@
 # Bookmarks
 
+> Note: moved into `monorepo`
+
 ## System setup
 
 - Ubuntu: run `./system-setup/ubuntu/setup.sh`
