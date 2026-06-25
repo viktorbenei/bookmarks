@@ -24,7 +24,7 @@ rm -f "$HOME/.config/fish/config.fish"
 ln -s "$(pwd)/mac.config.fish" "$HOME/.config/fish/config.fish"
 cd -
 
-brew tap homebrew/cask-fonts
-brew install font-hack
+#brew tap homebrew/cask-fonts
+#brew install font-hack
 
 echo '=== FINISHED [OK] ==='
